@@ -1,0 +1,6 @@
+{
+  "name": "Aether - 3D Liquid Glass Weather",
+  "description": "Next-generation Android weather app designed in 3D Apple Liquid Glass aesthetic with interactive spatial tilt, fluid caustics, and live forecasts.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

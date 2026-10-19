@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1020" />
+      <stop offset="50%" stop-color="#111c38" />
+      <stop offset="100%" stop-color="#070b14" />
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="50%" stop-color="#FFB300" />
+      <stop offset="100%" stop-color="#FF6F00" />
+    </linearGradient>
+    <radialGradient id="sunAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD54F" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#FF8F00" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#FF6F00" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.9)" />
+      <stop offset="40%" stop-color="rgba(129, 212, 250, 0.6)" />
+      <stop offset="80%" stop-color="rgba(213, 0, 249, 0.4)" />
+      <stop offset="100%" stop-color="rgba(0, 229, 255, 0.3)" />
+    </linearGradient>
+    <linearGradient id="rimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="30%" stop-color="#ffffff" stop-opacity="0.4" />
+      <stop offset="70%" stop-color="#00E5FF" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#D500F9" stop-opacity="0.7" />
+    </linearGradient>
+  </defs>
+
+  <!-- Squircle / App background with safe zone -->
+  <rect width="512" height="512" rx="115" fill="url(#bgGrad)" />
+
+  <!-- Outer Iridescent Sheen Border -->
+  <rect x="6" y="6" width="500" height="500" rx="110" fill="none" stroke="url(#rimGrad)" stroke-width="4" opacity="0.65" />
+
+  <!-- Sun Corona Glow -->
+  <circle cx="340" cy="190" r="140" fill="url(#sunAura)" />
+
+  <!-- 3D Glass Sun Sphere -->
+  <circle cx="340" cy="190" r="75" fill="url(#sunGrad)" filter="drop-shadow(0 12px 24px rgba(255, 111, 0, 0.5))" />
+  <!-- Sun Specular Arc -->
+  <path d="M 310 145 A 55 55 0 0 1 375 145" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.8" />
+
+  <!-- 3D Frosted Glass Cloud Body -->
+  <path d="M 160 350
+           C 110 350, 80 305, 110 260
+           C 120 220, 160 200, 200 215
+           C 220 160, 310 160, 340 215
+           C 390 215, 420 250, 410 295
+           C 410 340, 370 350, 340 350 Z"
+        fill="url(#cloudGrad)"
+        filter="drop-shadow(0 20px 40px rgba(0, 0, 0, 0.45))" />
+
+  <!-- Specular Rim Edge along Cloud -->
+  <path d="M 160 350
+           C 110 350, 80 305, 110 260
+           C 120 220, 160 200, 200 215
+           C 220 160, 310 160, 340 215
+           C 390 215, 420 250, 410 295
+           C 410 340, 370 350, 340 350 Z"
+        fill="none"
+        stroke="url(#rimGrad)"
+        stroke-width="7" />
+
+  <!-- Refractive Rain Drops / Floating Glass Beads -->
+  <ellipse cx="180" cy="400" rx="6" ry="16" fill="#00E5FF" opacity="0.8" />
+  <ellipse cx="260" cy="415" rx="6" ry="16" fill="#81D4FA" opacity="0.9" />
+  <ellipse cx="340" cy="395" rx="6" ry="16" fill="#D500F9" opacity="0.8" />
+</svg>

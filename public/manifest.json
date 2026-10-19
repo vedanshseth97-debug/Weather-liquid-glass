@@ -1,0 +1,56 @@
+{
+  "id": "/",
+  "name": "Aether - 3D Liquid Glass Weather",
+  "short_name": "Aether",
+  "description": "Next-generation Android weather app in 3D Apple Liquid Glass with live voice broadcasts, caustics, and instant shortcuts.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#070b14",
+  "theme_color": "#070b14",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Current Weather",
+      "short_name": "Current",
+      "description": "Open live weather for detected GPS location",
+      "url": "/?shortcut=current",
+      "icons": [{ "src": "/icon.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Live Weather Broadcast",
+      "short_name": "Broadcast",
+      "description": "Listen to the meteorologist voice bulletin",
+      "url": "/?shortcut=broadcast",
+      "icons": [{ "src": "/icon.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Search Locations",
+      "short_name": "Search",
+      "description": "Find weather for cities worldwide",
+      "url": "/?shortcut=search",
+      "icons": [{ "src": "/icon.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Animation & FX Studio",
+      "short_name": "Animation",
+      "description": "Interactive motion shaders & particle storms",
+      "url": "/?shortcut=animation",
+      "icons": [{ "src": "/icon.svg", "sizes": "192x192" }]
+    }
+  ]
+}
